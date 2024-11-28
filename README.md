@@ -89,7 +89,7 @@
 1) ### Установите пакет:
 
 ```bash
-npm install npm i @ilya_goncharov_y/customeslint --save-dev
+npm i @ilya_goncharov_y/customeslint --save-dev
 ```
 
 2) ### Настройте ESLint в проекте: Создайте файл eslint.config.js в корне проекта:
