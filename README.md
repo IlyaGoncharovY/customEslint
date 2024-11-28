@@ -4,14 +4,14 @@
 
 ## Особенности
 1) Рекомендуемые конфигурации:
-- JavaScript `(js.configs.recommended)`
-- React-хуки `(plugin:react-hooks/recommended)`
-- TypeScript `(plugin:@typescript-eslint/recommended)`
+ - JavaScript `(js.configs.recommended)`
+ - React-хуки `(plugin:react-hooks/recommended)`
+ - TypeScript `(plugin:@typescript-eslint/recommended)`
 2) Поддержка ECMAScript 2021 и модулей ES.
 3) Интеграция с плагинами:
-- TypeScript `(@typescript-eslint)`
-- Управление импортами `(eslint-plugin-import)`
-- Хуки React `(eslint-plugin-react-hooks)`
+ - TypeScript `(@typescript-eslint)`
+ - Управление импортами `(eslint-plugin-import)`
+ - Хуки React `(eslint-plugin-react-hooks)`
 4) Комплексные правила для обеспечения единообразного стиля кода.
 
 ## Детали конфигурации
@@ -70,15 +70,15 @@
 ### Импорты
 1) `import/order` - 
 Настроить порядок импортов:
-- `builtin` – Встроенные модули (например, `fs`, `path`).
-- `external` – Внешние библиотеки.
-- `internal` – Внутренние модули проекта.
-- `parent` – Модули из родительских директорий.
-- `sibling` – Модули из соседних директорий.
-- `index` – Импорты из `index.js`.
-- `object` – Импорты объектов.
-- `type` – Импорты типов.
-- `newlines-between: always-and-inside-groups` -
+ - `builtin` – Встроенные модули (например, `fs`, `path`).
+ - `external` – Внешние библиотеки.
+ - `internal` – Внутренние модули проекта.
+ - `parent` – Модули из родительских директорий.
+ - `sibling` – Модули из соседних директорий.
+ - `index` – Импорты из `index.js`.
+ - `object` – Импорты объектов.
+ - `type` – Импорты типов.
+ - `newlines-between: always-and-inside-groups` -
 Требовать пустые строки между группами импортов.
 
 ## Настройки React
