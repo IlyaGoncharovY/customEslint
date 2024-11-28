@@ -1,0 +1,26 @@
+{
+  "name": "@ilya_goncharov_y/customeslint",
+  "version": "1.0.0",
+  "description": "Custom ESLint configuration for React and TypeScript projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["eslint", "eslint-config", "typescript", "react", "lint"],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "npm": ">=7",
+    "yarn": ">=1.22",
+    "pnpm": ">=6"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.15.0",
+    "@typescript-eslint/eslint-plugin": "^8.16.0",
+    "@typescript-eslint/parser": "^8.16.0",
+    "eslint": "^9.15.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-react-hooks": "^5.0.0"
+  }
+}
