@@ -1,80 +1,113 @@
-# Общие настройки:
-1) js.configs.recommended
+# Custom ESLint Configuration
+## Кастомная конфигурация ESLint для проектов на React и TypeScript.
+Этот пакет предоставляет готовую конфигурацию ESLint для работы с JavaScript, TypeScript, React и хуками React. Он обеспечивает единообразие в коде и помогает избегать распространенных ошибок.
+
+## Особенности
+1) Рекомендуемые конфигурации:
+- JavaScript `(js.configs.recommended)`
+- React-хуки `(plugin:react-hooks/recommended)`
+- TypeScript `(plugin:@typescript-eslint/recommended)`
+2) Поддержка ECMAScript 2021 и модулей ES.
+3) Интеграция с плагинами:
+- TypeScript `(@typescript-eslint)`
+- Управление импортами `(eslint-plugin-import)`
+- Хуки React `(eslint-plugin-react-hooks)`
+4) Комплексные правила для обеспечения единообразного стиля кода.
+
+## Детали конфигурации
+### Общие настройки
+1) `js.configs.recommended` - 
 Рекомендуемые настройки для JavaScript от ESLint.
-2) js.configs.recommended
-Рекомендуемые настройки для JavaScript от ESLint.
-3) plugin:react-hooks/recommended
-Рекомендуемые правила для работы с React-хуками.
-4) plugin:@typescript-eslint/recommended
-Рекомендуемые правила для работы с TypeScript.
+2) `plugin:react-hooks/recommended` - 
+Рекомендуемые правила для работы с хуками React.
+3) `plugin:@typescript-eslint/recommended` - 
+Рекомендуемые правила для TypeScript.
 
-# Настройки для файлов:
-1) Применяются к файлам с расширениями *.js, *.jsx, *.ts, *.tsx.
-2) Используется парсер @typescript-eslint/parser.
-ecmaVersion: 2021
-3) Поддержка синтаксиса ECMAScript 2021.
-sourceType: 'module'
+## Настройки для файлов
+1) Применяется к файлам с расширениями: `*.js`, `*.jsx`, `*.ts`, `*.tsx`.
+2) Используется парсер: `@typescript-eslint/parser`.
+3) `ecmaVersion: 2021` -
+Поддержка синтаксиса ECMAScript 2021.
+4) `sourceType: 'module'` - 
+Поддержка модулей ES.
 
-# Поддержка модулей ES.
-# Плагины:
-1) @typescript-eslint
-Для работы с TypeScript.
-2) eslint-plugin-import
-Управление импортами.
-3) eslint-plugin-react-hooks
-Правила для хуков React.
+## Плагины
+1) `@typescript-eslint` - 
+Для проверки TypeScript.
+2) `eslint-plugin-import` - 
+Для управления порядком импортов.
+3) `eslint-plugin-react-hooks` - 
+Для проверки правил использования хуков React.
 
-# Правила:
-# React-хуки:
-1) react-hooks/exhaustive-deps: warn
-Предупреждать, если зависимости хуков указаны неверно.
-2) react-hooks/rules-of-hooks: error
-Ошибка, если хуки используются вне функций или не по правилам.
-
-# TypeScript:
-1) @typescript-eslint/explicit-module-boundary-types: off
-Отключить требование указывать типы для входных данных и результатов функций.
-2) @typescript-eslint/no-explicit-any: off
-Разрешить использование типа any.
-3) @typescript-eslint/no-unused-vars: warn
-Предупреждать о неиспользуемых переменных. Игнорировать переменные, начинающиеся с _.
-
-# Общие правила:
-1) no-console: warn
-Предупреждать при использовании console.
-2) prefer-const: warn
-Рекомендовать использовать const, если переменная не изменяется.
-3) quotes: warn, 'single'
-Предупреждать, если строки не в одинарных кавычках.
-4) indent: warn, 2
-Использовать отступ в 2 пробела.
-5) max-len: warn, { code: 120 }
+## Правила
+### Хуки React
+1) `react-hooks/exhaustive-deps: warn` - 
+Предупреждать, если зависимости в хуках указаны неверно.
+2) `react-hooks/rules-of-hooks: error` - 
+Выдавать ошибку, если хуки используются не по правилам.
+### TypeScript
+1) `@typescript-eslint/explicit-module-boundary-types: off` - 
+Отключить обязательное указание типов для входных и выходных данных функций.
+2) `@typescript-eslint/no-explicit-any: off` - 
+Разрешить использование типа `any`.
+3) `@typescript-eslint/no-unused-vars: warn` - 
+Предупреждать о неиспользуемых переменных, игнорируя переменные, начинающиеся с `_`.
+### Общие правила
+1) `no-console: warn` - 
+Предупреждать при использовании `console`.
+2) `prefer-const: warn` - 
+Рекомендовать использовать `const`, если переменная не изменяется.
+3) `quotes: warn, 'single'` - 
+Требовать использование одинарных кавычек для строк.
+4) `indent: warn, 2` - 
+Требовать отступ в 2 пробела.
+5) `max-len: warn, { code: 120 }` -
 Предупреждать, если длина строки превышает 120 символов.
-6) comma-dangle: warn, 'always-multiline'
-Требовать запятую в конце многострочных конструкций.
-7) semi: warn, 'always'
-Требовать точку с запятой в конце выражений.
-
-# Импорты:
-1) import/order
-
-# Настроить порядок импортов:
-1) builtin – встроенные модули (например, fs, path).
-2) external – внешние библиотеки.
-3) internal – внутренние модули проекта.
-4) parent – модули из родительских директорий.
-5) sibling – модули из соседних директорий.
-6) index – импорт из index.js.
-7) object – импорты объектов.
-8) type – импорты типов.
-9) newlines-between: always-and-inside-groups
+6) `comma-dangle: warn, 'always-multiline'` - 
+Требовать запятые в конце многострочных конструкций.
+7) `semi: warn, 'always'` - 
+Требовать точки с запятой в конце выражений.
+### Импорты
+1) `import/order` - 
+Настроить порядок импортов:
+- `builtin` – Встроенные модули (например, `fs`, `path`).
+- `external` – Внешние библиотеки.
+- `internal` – Внутренние модули проекта.
+- `parent` – Модули из родительских директорий.
+- `sibling` – Модули из соседних директорий.
+- `index` – Импорты из `index.js`.
+- `object` – Импорты объектов.
+- `type` – Импорты типов.
+- `newlines-between: always-and-inside-groups` -
 Требовать пустые строки между группами импортов.
 
-# Настройки React:
-1) react.version: 'detect'
-Автоматически определять версию React для применения правил.
+## Настройки React
+1) `react.version: 'detect'` - 
+Автоматически определять версию React для корректной работы правил.
 
-## index.js:
+## Использование
+1) ### Установите пакет:
+
+```bash
+npm install npm i @ilya_goncharov_y/customeslint --save-dev
+```
+
+2) ### Настройте ESLint в проекте: Создайте файл eslint.config.js в корне проекта:
+
+```js
+import eslintConfig from '@ilya_goncharov_y/customeslint';
+
+export default eslintConfig;
+```
+
+3) ### Запустите ESLint:
+
+```bash
+npx eslint .
+```
+
+## Пример конфигурации
+Вот полная конфигурация, экспортируемая этим пакетом:
 ```js
 export default [
     js.configs.recommended,
