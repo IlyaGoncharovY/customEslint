@@ -1,12 +1,18 @@
 {
   "name": "@ilya_goncharov_y/customeslint",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom ESLint configuration for React and TypeScript projects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["eslint", "eslint-config", "typescript", "react", "lint"],
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "typescript",
+    "react",
+    "lint"
+  ],
   "author": "",
   "license": "ISC",
   "engines": {
