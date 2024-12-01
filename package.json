@@ -1,8 +1,13 @@
 {
   "name": "@ilya_goncharov_y/customeslint",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Custom ESLint configuration for React and TypeScript projects",
   "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
