@@ -86,13 +86,20 @@
 Автоматически определять версию React для корректной работы правил.
 
 ## Использование
-1) ### Установите пакет:
+### 1) Установите пакет:
 
 ```bash
+# npm
 npm i @ilya_goncharov_y/customeslint --save-dev
+
+# pnpm
+npm i @ilya_goncharov_y/customeslint --save-dev
+
+# yarn
+yarn add @ilya_goncharov_y/customeslint --save-dev
 ```
 
-2) ### Настройте ESLint в проекте: Создайте файл eslint.config.js в корне проекта:
+### 2) Настройте ESLint в проекте: Создайте файл eslint.config.js в корне проекта:
 
 ```js
 import eslintConfig from '@ilya_goncharov_y/customeslint';
@@ -100,7 +107,7 @@ import eslintConfig from '@ilya_goncharov_y/customeslint';
 export default eslintConfig;
 ```
 
-3) ### Запустите ESLint:
+### 3) Запустите ESLint:
 
 ```bash
 npx eslint .
