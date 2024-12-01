@@ -1,7 +1,8 @@
 {
   "name": "@ilya_goncharov_y/customeslint",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Custom ESLint configuration for React and TypeScript projects",
+  "type": "module",
   "main": "index.js",
   "exports": {
     ".": {
