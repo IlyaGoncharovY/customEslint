@@ -1,4 +1,5 @@
 import js from '@eslint/js';
+
 import { FlatCompat } from '@eslint/eslintrc';
 import parser from '@typescript-eslint/parser';
 import importPlugin from 'eslint-plugin-import';
