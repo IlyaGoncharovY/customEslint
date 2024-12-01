@@ -1,9 +1,9 @@
-import { FlatCompat } from '@eslint/eslintrc';
 import js from '@eslint/js';
+import { FlatCompat } from '@eslint/eslintrc';
+import parser from '@typescript-eslint/parser';
+import importPlugin from 'eslint-plugin-import';
 import reactHooks from 'eslint-plugin-react-hooks';
 import typescriptEslint from '@typescript-eslint/eslint-plugin';
-import importPlugin from 'eslint-plugin-import';
-import parser from '@typescript-eslint/parser';
 
 const compat = new FlatCompat();
 
