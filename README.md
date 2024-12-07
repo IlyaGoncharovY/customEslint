@@ -93,7 +93,7 @@
 npm i @ilya_goncharov_y/customeslint --save-dev
 
 # pnpm
-npm i @ilya_goncharov_y/customeslint --save-dev
+pnpm i @ilya_goncharov_y/customeslint --save-dev
 
 # yarn
 yarn add @ilya_goncharov_y/customeslint --save-dev
