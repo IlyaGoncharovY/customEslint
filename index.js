@@ -1,7 +1,9 @@
 import js from '@eslint/js';
+
 import { FlatCompat } from '@eslint/eslintrc';
 import parser from '@typescript-eslint/parser';
 import importPlugin from 'eslint-plugin-import';
+import reactHooks from 'eslint-plugin-react-hooks';
 import typescriptEslint from '@typescript-eslint/eslint-plugin';
 
 const compat = new FlatCompat();
@@ -21,6 +23,7 @@ export default [
         plugins: {
             '@typescript-eslint': typescriptEslint,
             import: importPlugin,
+            'react-hooks': reactHooks,
         },
         rules: {
             'react-hooks/exhaustive-deps': 'warn',
